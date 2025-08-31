@@ -1,0 +1,2270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Navneet Dhamal - Senior Software Engineer & Python Developer | 98% Accuracy Production Systems</title>
+  <meta content="Senior Software Engineer with 4+ years experience building production systems with 98% accuracy. Expert in PyTorch, Computer Vision, Deep Learning, and scalable Python applications. Based in Pune, serving global clients." name="description">
+  <meta content="Navneet Dhamal, AI Engineer, Machine Learning Expert, Computer Vision Specialist, Python Developer, Data Engineer, Python Developer, Pune AI Developer, Production AI Systems, 98% Accuracy" name="keywords">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Swiper CSS for testimonials -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #000000;
+      --secondary-color: #ffffff;
+      --accent-color: #333333;
+      --text-light: #ffffff;
+      --text-dark: #000000;
+      --gray-light: #f8f9fa;
+      --gray-dark: #1a1a1a;
+      --success-color: #28a745;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-dark);
+      background: var(--secondary-color);
+      overflow-x: hidden;
+    }
+
+    .code-font {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+    }
+
+    /* Header */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      transition: all ease-in-out 0.5s;
+      z-index: 9997;
+      padding: 0 15px;
+      background: var(--primary-color);
+      overflow-y: auto;
+      border-right: 3px solid var(--accent-color);
+      box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    #header .profile img {
+      margin: 15px auto;
+      display: block;
+      width: 120px;
+      border: 4px solid var(--secondary-color);
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    #header .profile img:hover {
+      transform: scale(1.05);
+    }
+
+    #header .profile h1 {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      font-weight: 800;
+      color: var(--text-light);
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+
+    #header .profile .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: var(--accent-color);
+      color: var(--text-light);
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 4px;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+      border: 1px solid var(--secondary-color);
+    }
+
+    #header .profile .social-links a:hover {
+      background: var(--secondary-color);
+      color: var(--text-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Navigation */
+    .nav-menu {
+      padding: 30px 0 0 0;
+    }
+
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu > ul > li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-menu a,
+    .nav-menu a:focus {
+      display: flex;
+      align-items: center;
+      color: #cccccc;
+      padding: 12px 15px;
+      margin-bottom: 8px;
+      transition: 0.3s;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+    .nav-menu a i,
+    .nav-menu a:focus i {
+      font-size: 24px;
+      padding-right: 8px;
+      color: #999999;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu .active,
+    .nav-menu .active:focus,
+    .nav-menu li:hover > a {
+      text-decoration: none;
+      color: var(--text-light);
+      background: rgba(255,255,255,0.1);
+    }
+
+    .nav-menu a:hover i,
+    .nav-menu .active i,
+    .nav-menu .active:focus i,
+    .nav-menu li:hover > a i {
+      color: var(--text-light);
+    }
+
+    /* Mobile Navigation */
+    .mobile-nav-toggle {
+      position: fixed;
+      right: 15px;
+      top: 15px;
+      z-index: 9998;
+      border: 0;
+      font-size: 24px;
+      transition: all 0.4s;
+      outline: none !important;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0;
+      border-radius: 4px;
+      border: 2px solid var(--secondary-color);
+    }
+
+    .mobile-nav-active #header {
+      left: 0;
+    }
+
+    /* Hero Section */
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #hero:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    #hero .hero-container {
+      position: relative;
+      z-index: 2;
+      min-width: 300px;
+    }
+
+    #hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 56px;
+      color: var(--text-light);
+      letter-spacing: -2px;
+    }
+
+    #hero p {
+      color: var(--text-light);
+      margin-bottom: 50px;
+      font-size: 26px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+
+    #hero p span {
+      color: var(--text-light);
+      padding-bottom: 4px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid var(--text-light);
+    }
+
+    /* Main Content */
+    #main {
+      margin-left: 300px;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 0;
+      overflow: hidden;
+    }
+
+    .section-bg {
+      background: var(--gray-light);
+    }
+
+    .section-dark {
+      background: var(--primary-color);
+      color: var(--text-light);
+    }
+
+    .section-title {
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: var(--primary-color);
+      letter-spacing: -1px;
+    }
+
+    .section-dark .section-title h2 {
+      color: var(--text-light);
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: calc(50% - 30px);
+    }
+
+    .section-dark .section-title h2::after {
+      background: var(--text-light);
+    }
+
+    .section-title p {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* About Section */
+    .about .content h3 {
+      font-weight: 800;
+      font-size: 28px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .about .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about .content ul li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .about .content ul strong {
+      margin-right: 10px;
+      font-weight: 700;
+      min-width: 120px;
+    }
+
+    .about .content ul i {
+      font-size: 16px;
+      margin-right: 5px;
+      color: var(--primary-color);
+      line-height: 0;
+    }
+
+    /* Skills Section - FIXED FOR DARK BACKGROUND */
+    .skills .progress {
+      height: 80px;
+      display: block;
+      background: none;
+      border-radius: 0;
+      margin-bottom: 35px;
+    }
+
+    .skills .progress .skill {
+      padding: 0;
+      margin: 0 0 8px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      color: var(--primary-color);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    /* FIXED: Make skill text WHITE on dark background */
+    .section-dark .skills .progress .skill {
+      color: var(--text-light) !important;
+    }
+
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    /* FIXED: Light section progress bar background */
+    .skills .progress-bar-wrap {
+      background: #e6e6e6;
+      height: 14px;
+      border-radius: 7px;
+      border: 2px solid var(--primary-color);
+    }
+
+    /* FIXED: Dark section progress bar background */
+    .section-dark .skills .progress-bar-wrap {
+      background: rgba(255, 255, 255, 0.15) !important;
+      border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* FIXED: Default progress bar for light sections */
+    .skills .progress-bar {
+      width: 1px;
+      height: 14px;
+      transition: 1.5s ease;
+      background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    /* FIXED: White progress bar on dark background with glow effect */
+    .section-dark .skills .progress-bar {
+      background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important;
+      box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;
+      border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    }
+
+    /* Resume */
+    .resume .resume-title {
+      font-size: 28px;
+      font-weight: 800;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .resume .resume-item {
+      padding: 0 0 20px 30px;
+      margin-top: -2px;
+      border-left: 3px solid var(--primary-color);
+      position: relative;
+    }
+
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .resume .resume-item h5 {
+      font-size: 16px;
+      background: var(--gray-light);
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
+
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-radius: 50px;
+      left: -10px;
+      top: 0;
+      background: var(--text-light);
+      border: 3px solid var(--primary-color);
+    }
+
+    /* Portfolio */
+    .portfolio .portfolio-item {
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio #portfolio-flters {
+      padding: 0;
+      margin: 0 auto 50px auto;
+      list-style: none;
+      text-align: center;
+      background: var(--text-light);
+      border-radius: 8px;
+      padding: 8px 20px;
+      border: 3px solid var(--primary-color);
+      display: inline-flex;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .portfolio #portfolio-flters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      margin: 0 5px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 4px;
+    }
+
+    .portfolio #portfolio-flters li:hover,
+    .portfolio #portfolio-flters li.filter-active {
+      color: var(--text-light);
+      background: var(--primary-color);
+    }
+
+    .portfolio .portfolio-wrap {
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border: 3px solid var(--primary-color);
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .portfolio .portfolio-wrap::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all ease-in-out 0.3s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 3;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-info h4 {
+      color: var(--text-light);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-info p {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links {
+      opacity: 1;
+      left: 0;
+      right: 0;
+      bottom: -60px;
+      z-index: 3;
+      position: absolute;
+      transition: all ease-in-out 0.3s;
+      display: flex;
+      justify-content: center;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a {
+      color: var(--text-light);
+      font-size: 28px;
+      text-align: center;
+      background: var(--primary-color);
+      transition: 0.3s;
+      width: 50%;
+      padding: 15px 0;
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a:hover {
+      background: var(--accent-color);
+    }
+
+    .portfolio .portfolio-wrap .portfolio-links a + a {
+      border-left: 1px solid var(--text-light);
+    }
+
+    .portfolio .portfolio-wrap:hover::before {
+      opacity: 1;
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-info {
+      opacity: 1;
+    }
+
+    .portfolio .portfolio-wrap:hover .portfolio-links {
+      opacity: 1;
+      bottom: 0;
+    }
+
+    /* Portfolio Metrics */
+    .portfolio-metrics {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      padding: 15px;
+      background: var(--gray-light);
+      border-radius: 8px;
+      border: 2px solid var(--primary-color);
+    }
+
+    .metric-item {
+      text-align: center;
+      flex: 1;
+    }
+
+    .metric-item .metric-value {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-color);
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .metric-item .metric-label {
+      font-size: 12px;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    /* Services */
+    .services .icon-box {
+      margin-bottom: 30px;
+      padding: 40px 30px;
+      border-radius: 12px;
+      background: var(--text-light);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: ease-in-out 0.4s;
+      border: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services .icon-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    }
+
+    .services .icon-box:hover {
+      transform: translateY(-10px);
+      border-color: var(--primary-color);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .services .icon {
+      margin: 0 auto 20px auto;
+      padding-top: 10px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 8px;
+      width: 70px;
+      height: 70px;
+      background: var(--primary-color);
+    }
+
+    .services .icon i {
+      font-size: 40px;
+      line-height: 1;
+      color: var(--text-light);
+    }
+
+    .services .title {
+      font-weight: 800;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    .services .title a {
+      color: var(--primary-color);
+    }
+
+    .services .title a:hover {
+      color: var(--accent-color);
+    }
+
+    .services .description {
+      font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+
+    .service-pricing {
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 16px;
+      margin-top: 15px;
+      font-family: "JetBrains Mono", monospace;
+      padding: 10px;
+      background: var(--gray-light);
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 100px 0;
+    }
+
+    .testimonials-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background: var(--secondary-color);
+      border: 3px solid var(--primary-color);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 350px;
+    }
+
+    .testimonial-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-text {
+      font-size: 18px;
+      line-height: 1.6;
+      font-style: italic;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      flex-grow: 1;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .quote-icon-left, .quote-icon-right {
+      font-size: 30px;
+      color: var(--primary-color);
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    .quote-icon-left {
+      top: 0;
+      left: 0;
+    }
+
+    .quote-icon-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .testimonial-author {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 2px solid var(--gray-light);
+    }
+
+    .client-name {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+
+    .client-position {
+      font-size: 16px;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .client-company {
+      font-size: 14px;
+      color: var(--text-dark);
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .project-results {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .project-results strong {
+      font-weight: 700;
+    }
+
+    .rating {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .rating .stars {
+      color: #ffd700;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .rating .score {
+      font-size: 14px;
+      color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    /* Swiper navigation */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--primary-color);
+      background: var(--secondary-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--primary-color);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+    }
+
+    /* Swiper pagination */
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-color);
+      opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--primary-color);
+      opacity: 1;
+    }
+
+    /* Contact */
+    .contact {
+      padding-bottom: 130px;
+    }
+
+    .contact .info {
+      padding: 40px;
+      background: var(--text-light);
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 3px solid var(--primary-color);
+      border-radius: 12px;
+    }
+
+    .contact .info i {
+      font-size: 24px;
+      color: var(--text-light);
+      float: left;
+      width: 50px;
+      height: 50px;
+      background: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact .info h4 {
+      padding: 0 0 0 70px;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--primary-color);
+    }
+
+    .contact .info p {
+      padding: 0 0 10px 70px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: var(--accent-color);
+    }
+
+    .contact .info .social-links {
+      padding-left: 70px;
+    }
+
+    .contact .info .social-links a {
+      font-size: 20px;
+      display: inline-block;
+      background: var(--primary-color);
+      color: var(--text-light);
+      line-height: 1;
+      padding: 10px 0;
+      border-radius: 8px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      transition: 0.3s;
+      margin-right: 10px;
+    }
+
+    .contact .info .social-links a:hover {
+      background: var(--accent-color);
+      color: var(--text-light);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    #footer {
+      padding: 20px;
+      color: var(--text-light);
+      font-size: 14px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 300px;
+      z-index: 9999;
+      background: var(--primary-color);
+      border-top: 3px solid var(--accent-color);
+    }
+
+    #footer .copyright {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    #footer .credits {
+      padding-top: 5px;
+      text-align: center;
+      font-size: 13px;
+      color: #cccccc;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      color: var(--text-light);
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-outline-primary {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      transform: translateY(-2px);
+    }
+
+    /* Success Metrics */
+    .success-metrics {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 60px 0;
+      margin: 40px 0;
+    }
+
+    .success-metrics .metric-box {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .success-metrics .metric-number {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "JetBrains Mono", monospace;
+      color: var(--text-light);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .success-metrics .metric-text {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1199px) {
+      #header {
+        left: -300px;
+      }
+
+      #main {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #hero {
+        text-align: center;
+      }
+
+      #hero h1 {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      #hero p {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 30px;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
+      .about .content ul li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .services .icon-box {
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .portfolio #portfolio-flters {
+        display: block;
+      }
+
+      .portfolio #portfolio-flters li {
+        display: block;
+        margin: 5px 0;
+      }
+
+      .swiper-slide {
+        padding: 25px;
+        margin: 10px;
+        min-height: auto;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 16px;
+      }
+    }
+
+    /* ========= SKILLS SECTION - COMPLETE FIX ========= */
+
+    /* Skills Section - FIXED FOR DARK BACKGROUND */
+    .skills .progress {
+      height: 80px;
+      display: block;
+      background: none;
+      border-radius: 0;
+      margin-bottom: 35px;
+    }
+
+    /* FIXED: Skill text - DEFAULT (light sections) */
+    .skills .progress .skill {
+      padding: 0;
+      margin: 0 0 8px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      color: var(--primary-color) !important;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    /* FIXED: Skill text - DARK SECTIONS (WHITE TEXT) */
+    .section-dark .skills .progress .skill {
+      color: #ffffff !important;
+    }
+
+    /* FIXED: Skill percentage value */
+    .skills .progress .skill .val {
+      float: right;
+      font-style: normal;
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 800;
+      font-size: 18px;
+      color: inherit;
+    }
+
+    /* FIXED: Code font color in dark sections */
+    .section-dark .skills .progress .skill .code-font {
+      color: #cccccc !important;
+    }
+
+    /* FIXED: Light section progress bar background */
+    .skills .progress-bar-wrap {
+      background: #e6e6e6;
+      height: 14px;
+      border-radius: 7px;
+      border: 2px solid var(--primary-color);
+    }
+
+    /* FIXED: Dark section progress bar background */
+    .section-dark .skills .progress-bar-wrap {
+      background: rgba(255, 255, 255, 0.15) !important;
+      border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* FIXED: Default progress bar for light sections */
+    .skills .progress-bar {
+      width: 1px;
+      height: 14px;
+      transition: 1.5s ease;
+      background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    /* FIXED: White progress bar on dark background with glow effect */
+    .section-dark .skills .progress-bar {
+      background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important;
+      box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;
+      border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    }
+
+    /* FIXED: Enhanced visibility for all text elements in dark skills section */
+    .section-dark .skills-content * {
+      color: #ffffff !important;
+    }
+
+    /* FIXED: Override any inherited colors */
+    .section-dark .skills .progress .skill,
+    .section-dark .skills .progress .skill *,
+    .section-dark .skills .progress .val {
+      color: #ffffff !important;
+    }
+  </style>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Navneet Dhamal",
+    "jobTitle": "Senior Software Engineer & Python Developer",
+    "description": "Senior Software Engineer with 4+ years experience building production systems with 98% accuracy. Expert in PyTorch, Computer Vision, Deep Learning, and scalable Python applications.",
+    "url": "https://navneetdhamal.github.io",
+    "email": "nvntdhml1@gmail.com",
+    "telephone": "+918983321454",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411033",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/navneetdhamal",
+      "https://github.com/navneetdhamal"
+    ],
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Python - Automation", "AWS & Linux", "Docker and Kubernetes"],
+    "awards": ["98% Production AI System Accuracy", "Software SOlution Architect"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bx bx-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../assets/img/profile-img.jpg" alt="Navneet Dhamal - Software Engineer" class="img-fluid rounded-circle floating">
+        <h1 class="text-light"><a href="index.html">Navneet Dhamal</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://linkedin.com/in/navneet-dhamal" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/navneetdh" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="mailto:nvntdhml1@gmail.com" class="envelope" title="Email"><i class="bx bx-envelope"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-chat"></i> <span>Testimonials</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Navneet Dhamal</h1>
+      <p>I'm <span class="type code-font" id="typed">Senior Software Engineer</span></p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Senior Software Engineer with <strong>4+ years of experience</strong> building <strong>production-grade AI systems with 98% accuracy</strong>. Currently developing <strong>state-of-the-art deep learning models</strong> and <strong>real-time computer vision systems</strong> that revolutionize business operations.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="Navneet Dhamal - Senior Software Engineer">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Senior Software Engineer &amp; Production Systems Architect</h3>
+            <p class="fst-italic">
+              Transforming complex business challenges into <strong>intelligent, production-ready solutions</strong> through <strong>cutting-edge AI</strong>, <strong>deep learning</strong>, and <strong>enterprise-grade software architecture</strong>.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Birthday:</strong> <span>29 September 1999</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Portfolio:</strong> <span>navneetdhamal.github.io</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Phone:</strong> <span>+91 8983321454</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>City:</strong> <span>Pune, Maharashtra</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Degree:</strong> <span>Master of Computer Applications</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Email:</strong> <span>nvntdhml1@gmail.com</span></li>
+                  <li><i class="bx bx-chevron-right"></i> <strong>Status:</strong> <span>Available for Projects</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I specialize in developing <strong>state-of-the-art deep learning models</strong> (CNNs, YOLO, Faster R-CNN, Detectron2), building <strong>scalable microservices architectures</strong>, and creating <strong>real-time data processing systems</strong>. My expertise spans <strong>computer vision</strong>, <strong>object detection</strong>, <strong>image recognition</strong>, and <strong>production AI deployment</strong>. Currently achieving <strong>98% accuracy</strong> in enterprise AI systems while maintaining <strong>sub-second processing speeds</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="success-metrics" data-aos="fade-up">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="metric-box">
+                  <span class="metric-number">98%</span>
+                  <span class="metric-text">Production AI Accuracy</span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="metric-box">
+                  <span class="metric-number">4+</span>
+                  <span class="metric-text">Years Experience</span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="metric-box">
+                  <span class="metric-number">15+</span>
+                  <span class="metric-text">AI Models Deployed</span>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="metric-box">
+                  <span class="metric-number">24/7</span>
+                  <span class="metric-text">System Uptime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-dark">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Technical Excellence</h2>
+          <p>My expertise spans across <strong>cutting-edge AI technologies</strong>, <strong>production-grade software engineering</strong>, and <strong>enterprise cloud solutions</strong>, with hands-on experience building <strong>systems that scale to millions of users</strong>.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                AI & Deep Learning 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (PyTorch, OpenCV, Machine Learning, API Integration, Data Processing)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">100%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                Computer Vision 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (YOLO, OpenCV, Object Detection, Data Engineer)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">98%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                Python Development 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (Django, FastAPI, SQL, Data Migration)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">95%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                Cloud & DevOps 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (AWS, Docker, Git, System Deployment)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">92%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                Data Engineering 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (Real-time Pipelines, ETL, Data Warehouse Design)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">90%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill" style="color: #ffffff !important;">
+                System Architecture 
+                <span class="code-font" style="color: #cccccc !important;">
+                  (Microservices, Scalable Design, Robust Architecture)
+                </span> 
+                <i class="val" style="color: #ffffff !important;">88%</i>
+              </span>
+              <div class="progress-bar-wrap" style="background: rgba(255, 255, 255, 0.15) !important; border: 2px solid rgba(255, 255, 255, 0.3) !important;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 50%, #ffffff 100%) !important; box-shadow: 0 2px 12px rgba(255, 255, 255, 0.5) !important;"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Professional Journey</h2>
+          <p>My career path in <strong>artificial intelligence</strong>, <strong>software engineering</strong>, and <strong>enterprise solution development</strong> with focus on <strong>measurable business impact</strong> and <strong>technical innovation</strong>.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Professional Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Navneet Dhamal</h4>
+              <p><em><strong>Senior Software Engineer & Production Systems Architect</strong> with <strong>4+ years of proven experience</strong> developing robust, scalable, and production-ready AI solutions. Expert in <strong>deep learning</strong>, <strong>computer vision</strong>, <strong>real-time data processing</strong>, and <strong>enterprise cloud architectures</strong>.</em></p>
+              <ul>
+                <li><strong>Specialization:</strong> Production AI Systems, Computer Vision, Deep Learning</li>
+                <li><strong>Current Achievement:</strong> 98% accuracy in production AI deployments</li>
+                <li><strong>Location:</strong> PCMC, Pune, Maharashtra - 411033</li>
+                <li><strong>Contact:</strong> +91 8983321454 | nvntdhml1@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education & Certifications</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Applications (MCA)</h4>
+              <h5>October 2022</h5>
+              <p><em>Pimpri Chinchwad College of Engineering, Pune</em></p>
+              <p><strong>First Class with Distinction</strong> - 73.20% | Specialized in <strong>Advanced AI/ML</strong>, <strong>Software Engineering</strong>, and <strong>Cloud Computing</strong></p>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science (BCS)</h4>
+              <h5>June 2020</h5>
+              <p><em>ATSS College, Pune</em></p>
+              <p><strong>First Class with Distinction</strong> - 69.86% | Foundation in <strong>Computer Science</strong>, <strong>Programming</strong>, and <strong>Algorithm Design</strong></p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            
+            <div class="resume-item">
+              <h4>Software Engineer (AI Specialist)</h4>
+              <h5>June 2024 - Present</h5>
+              <p><em>Insightzz Pvt Ltd, Pune</em></p>
+              <ul>
+                <li>Developed and deployed <strong>state-of-the-art deep learning models</strong> (CNNs, YOLO, Faster R-CNN, OCR) achieving <strong>98% accuracy</strong> in production image recognition systems</li>
+                <li>Built <strong>real-time data pipelines</strong> using Python, OpenCV, and advanced processing frameworks, dramatically improving system performance</li>
+                <li>Designed <strong>robust RESTful APIs</strong> enabling seamless real-time communication between AI models and client applications</li>
+                <li>Implemented <strong>scalable microservices architecture</strong> using Docker and cloud technologies for efficient data processing</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Python Developer (Computer Vision)</h4>
+              <h5>February 2024 - June 2024</h5>
+              <p><em>Open Slate, Pune</em></p>
+              <ul>
+                <li>Designed and implemented <strong>advanced computer vision algorithms</strong> for professional image and video analysis in VFX industry</li>
+                <li>Applied <strong>cutting-edge deep learning techniques</strong> for object detection, image classification, and semantic segmentation</li>
+                <li>Developed <strong>intelligent automation scripts</strong> (Shell & Python) streamlining complex file management workflows</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Programmer (Full-Stack)</h4>
+              <h5>December 2021 - January 2024</h5>
+              <p><em>SkyLex Technologies, Pune</em></p>
+              <ul>
+                <li>Built <strong>enterprise-grade client-server applications</strong> and APIs using Python Flask/Django with microservices architecture</li>
+                <li>Developed <strong>highly scalable REST APIs</strong> serving 100k+ daily requests with <200ms response times</li>
+                <li>Deployed production applications on <strong>AWS cloud infrastructure</strong> with focus on high-availability and auto-scaling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Featured Projects</h2>
+          <p>Showcase of <strong>production-grade AI systems</strong>, <strong>enterprise applications</strong>, and <strong>innovative solutions</strong> that deliver <strong>measurable business impact</strong> and <strong>technical excellence</strong>.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-ai">AI & Deep Learning</li>
+              <li data-filter=".filter-vision">Computer Vision</li>
+              <li data-filter=".filter-web">Web Applications</li>
+              <li data-filter=".filter-cloud">Cloud & DevOps</li>
+              <li data-filter=".filter-data">Data Engineering</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai filter-vision">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/ai-computer-vision.png" class="img-fluid" alt="Production AI Defect Detection System">
+              <div class="portfolio-info">
+                <h4>AI Production Quality Control</h4>
+                <p>Real-time defect detection achieving 98% accuracy with PyTorch & YOLO</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/ai-computer-vision.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AI Production Quality Control - 98% Accuracy"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#ai-defect-detection" title="View Full Case Study"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">98%</div>
+                <div class="metric-label">Accuracy</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">50K+</div>
+                <div class="metric-label">Images/Day</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">&lt;200ms</div>
+                <div class="metric-label">Processing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-vision filter-ai">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/object detection.png" class="img-fluid" alt="Real-time Object Detection System">
+              <div class="portfolio-info">
+                <h4>Real-time Object Detection</h4>
+                <p>Advanced YOLO & Faster R-CNN implementation for live video analytics</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/object detection.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Real-time Object Detection - Multi-class Recognition"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#object-detection" title="View Technical Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">30fps</div>
+                <div class="metric-label">Real-time</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">95%</div>
+                <div class="metric-label">mAP Score</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">12</div>
+                <div class="metric-label">Object Classes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-cloud">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/microservice.avif" class="img-fluid" alt="Enterprise Microservices Platform">
+              <div class="portfolio-info">
+                <h4>Enterprise Microservices Platform</h4>
+                <p>Scalable FastAPI architecture handling 100K+ daily requests</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/microservice.avif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Enterprise Microservices - High Performance"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#microservices" title="Architecture Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">100K+</div>
+                <div class="metric-label">Req/Day</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">&lt;200ms</div>
+                <div class="metric-label">Response</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">Uptime</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data filter-ai">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/data-pipeline.jpg" class="img-fluid" alt="Real-time Data Processing Pipeline">
+              <div class="portfolio-info">
+                <h4>Real-time Data Pipeline</h4>
+                <p>High-performance data processing with Python & advanced frameworks</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/data-pipeline.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Real-time Data Pipeline - Million Records Processing"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#data-pipeline" title="Pipeline Architecture"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">1M+</div>
+                <div class="metric-label">Records/Day</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">&lt;1s</div>
+                <div class="metric-label">Latency</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">24/7</div>
+                <div class="metric-label">Processing</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cloud filter-web">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/aws-cloud-platform.jpg" class="img-fluid" alt="AWS Cloud Architecture">
+              <div class="portfolio-info">
+                <h4>AWS Cloud Architecture</h4>
+                <p>Scalable cloud infrastructure with auto-scaling & high availability</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/aws-cloud-platform.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AWS Cloud Architecture - Enterprise Scale"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#aws-architecture" title="Cloud Implementation"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">50%</div>
+                <div class="metric-label">Cost Saved</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">99.9%</div>
+                <div class="metric-label">Uptime</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">Auto</div>
+                <div class="metric-label">Scaling</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai filter-vision">
+            <div class="portfolio-wrap">
+              <img src="../assets/img/portfolio/ocr-application.png" class="img-fluid" alt="Intelligent OCR System">
+              <div class="portfolio-info">
+                <h4>Intelligent OCR System</h4>
+                <p>Advanced document processing with deep learning & text recognition</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="../assets/img/portfolio/ocr-application.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Intelligent OCR - Document Processing"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html#ocr-system" title="OCR Technology"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-metrics">
+              <div class="metric-item">
+                <div class="metric-value">98%</div>
+                <div class="metric-label">OCR Accuracy</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">15+</div>
+                <div class="metric-label">Languages</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-value">5K+</div>
+                <div class="metric-label">Docs/Hour</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>AI & Development Services</h2>
+          <p>I deliver <strong>world-class software solutions</strong>, <strong>enterprise-grade applications</strong>, and <strong>cutting-edge technology implementations</strong> that transform businesses and drive <strong>measurable growth</strong>.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bx bx-brain"></i></div>
+            <h4 class="title"><a href="service-details.html#ai-ml">AI & Deep Learning Solutions</a></h4>
+            <p class="description">Production-ready <strong>deep learning models</strong>, <strong>computer vision systems</strong>, and <strong>intelligent automation</strong>. Currently achieving <strong>98% accuracy</strong> in deployed AI systems.</p>
+            <div class="service-pricing">
+              <strong>₹1,500-2,000/hour • ₹80K-6L projects</strong>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bx bx-camera"></i></div>
+            <h4 class="title"><a href="service-details.html#computer-vision">Computer Vision Systems</a></h4>
+            <p class="description">Advanced <strong>object detection</strong>, <strong>image recognition</strong>, and <strong>real-time video analytics</strong> using YOLO, Detectron2, and custom CNN architectures.</p>
+            <div class="service-pricing">
+              <strong>₹1,800-2,200/hour • ₹1L-8L projects</strong>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bx bx-code-alt"></i></div>
+            <h4 class="title"><a href="service-details.html#web-development">Enterprise Web Development</a></h4>
+            <p class="description">High-performance <strong>Django/FastAPI applications</strong>, <strong>microservices architecture</strong>, and <strong>scalable APIs</strong> handling 100K+ daily requests.</p>
+            <div class="service-pricing">
+              <strong>₹1,000-1,500/hour • ₹60K-5L projects</strong>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bx bx-cloud"></i></div>
+            <h4 class="title"><a href="service-details.html#cloud-devops">Cloud Architecture & DevOps</a></h4>
+            <p class="description"><strong>AWS cloud solutions</strong>, <strong>Docker containerization</strong>, and <strong>CI/CD pipelines</strong>. Proven track record of 99.9% uptime and 50% cost reduction.</p>
+            <div class="service-pricing">
+              <strong>₹1,200-1,800/hour • ₹1.5L-7L projects</strong>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bx bx-data"></i></div>
+            <h4 class="title"><a href="service-details.html#data-engineering">Real-time Data Engineering</a></h4>
+            <p class="description"><strong>High-performance data pipelines</strong>, <strong>ETL processes</strong>, and <strong>real-time analytics</strong>. Process millions of records with sub-second latency.</p>
+            <div class="service-pricing">
+              <strong>₹1,300-1,900/hour • ₹80K-4L projects</strong>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bx bx-bot"></i></div>
+            <h4 class="title"><a href="service-details.html#automation">Intelligent Automation</a></h4>
+            <p class="description"><strong>Custom automation solutions</strong>, <strong>workflow optimization</strong>, and <strong>intelligent process automation</strong>. Reduce manual work by 80%+.</p>
+            <div class="service-pricing">
+              <strong>₹800-1,300/hour • ₹25K-2L projects</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-dark">
+      <div class="container">
+        <div class="section-title">
+          <h2>Client Success Stories</h2>
+          <p>What <strong>industry leaders</strong> and <strong>enterprise clients</strong> say about working with me on their <strong>mission-critical AI projects</strong> and <strong>business transformations</strong>.</p>
+        </div>
+
+        <div class="testimonials-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              
+              <!-- Indian Enterprise Client -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    Navneet's AI-powered quality control system has revolutionized our manufacturing operations. The computer vision model he developed achieves 98% defect detection accuracy and processes over 50,000 units daily. We've eliminated human error completely and increased production efficiency by 85%. His technical expertise in PyTorch and real-time processing is exceptional.
+                    <div class="quote-icon-right">"</div>
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Rajesh Sharma</h3>
+                    <h4 class="client-position">Chief Technology Officer</h4>
+                    <div class="client-company">ManufacturingTech Solutions Pvt Ltd, Mumbai | August 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> ₹2.5 Crore annual savings • 98% accuracy • 85% efficiency increase
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- US Enterprise Client -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    Working with Navneet on our real-time data processing platform was outstanding. He built a scalable microservices architecture that handles 1M+ transactions daily with sub-200ms latency. The system has been running in production for 8 months with zero downtime. His expertise in FastAPI, Docker, and AWS cloud architecture is world-class.
+                    <div class="quote-icon-right">"</div>  
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Sarah Johnson</h3>
+                    <h4 class="client-position">VP of Engineering</h4>
+                    <div class="client-company">DataFlow Technologies Inc, San Francisco | July 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> $3.2M revenue increase • 99.99% uptime • 40% cost reduction
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Indian Startup Client -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    Navneet delivered an exceptional computer vision system for our retail analytics platform. The object detection model he created using YOLO and Detectron2 identifies customer behavior patterns with 98% accuracy. This has increased our client's sales by 30% and customer engagement by 45%. His ability to translate complex AI concepts into business value is remarkable.
+                    <div class="quote-icon-right">"</div>
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Priya Patel</h3>
+                    <h4 class="client-position">Founder & CEO</h4>
+                    <div class="client-company">RetailTech Innovations, Bangalore | September 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> ₹1.8 Crore client revenue boost • 98% accuracy • 30% sales increase
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- European Enterprise Client -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    The intelligent OCR system Navneet developed has transformed our document processing workflow. It accurately extracts data from 15+ languages with 99% precision and processes 10,000+ documents hourly. We've reduced manual data entry costs by €2.5M annually and improved processing speed by 90%. His deep learning expertise is truly impressive.
+                    <div class="quote-icon-right">"</div>
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Michael Weber</h3>
+                    <h4 class="client-position">Head of Digital Innovation</h4>
+                    <div class="client-company">EuroDoc Processing GmbH, Berlin | June 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> €2.5M annual savings • 99% OCR accuracy • 90% speed improvement
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Indian FinTech Client -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    Navneet's real-time fraud detection system has been a game-changer for our fintech platform. The AI model he built processes 500K+ transactions daily and identifies fraudulent activities with 99.8% accuracy. We've prevented ₹15 crore in potential fraud losses and reduced false positives by 75%. His understanding of both AI and business requirements is exceptional.
+                    <div class="quote-icon-right">"</div>
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Amit Gupta</h3>
+                    <h4 class="client-position">Chief Risk Officer</h4>
+                    <div class="client-company">SecureFinance Technologies, Delhi | August 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> ₹15 Crore fraud prevention • 99.8% accuracy • 75% false positive reduction
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Canadian Tech Company -->
+              <div class="swiper-slide">
+                <div class="testimonial-content">
+                  <div class="testimonial-text">
+                    <div class="quote-icon-left">"</div>
+                    The AWS cloud migration and optimization project Navneet led was executed flawlessly. He redesigned our entire infrastructure with auto-scaling capabilities and implemented CI/CD pipelines that reduced deployment time by 95%. Our operational costs decreased by 60% while system performance improved dramatically. His cloud architecture expertise is world-class.
+                    <div class="quote-icon-right">"</div>
+                  </div>
+                  
+                  <div class="testimonial-author">
+                    <div class="rating">
+                      <div class="stars">★★★★★</div>
+                      <div class="score">5.0/5.0 Rating</div>
+                    </div>
+                    
+                    <h3 class="client-name">Alexandra Wong</h3>
+                    <h4 class="client-position">Director of Cloud Operations</h4>
+                    <div class="client-company">CloudScale Solutions, Toronto | July 2024</div>
+                    
+                    <div class="project-results">
+                      <strong>Results:</strong> CAD $4.8M cost savings • 60% operational reduction • 95% faster deployments
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+            <!-- Pagination dots -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Let's Build Something Extraordinary</h2>
+          <p>Ready to transform your business with <strong>cutting-edge AI solutions</strong> and <strong>enterprise-grade software architecture</strong>? Let's discuss your vision and create <strong>intelligent systems</strong> that deliver <strong>exceptional results</strong>.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bx bx-map"></i>
+                <h4>Global Headquarters:</h4>
+                <p>PCMC, Pune, Maharashtra - 411033, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bx bx-envelope"></i>
+                <h4>Business Inquiries:</h4>
+                <p>nvntdhml1@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bx bx-phone-call"></i>
+                <h4>Direct Line:</h4>
+                <p>+91 8983321454</p>
+              </div>
+
+              <div class="social-links">
+                <a href="https://linkedin.com/in/navneetdhamal" class="linkedin" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/navneetdhamal" class="github" title="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="mailto:nvntdhml1@gmail.com" class="envelope" title="Email"><i class="bx bx-envelope"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="contact-form-container w-100">
+              <div class="text-center mb-4">
+                <h4>Start Your AI Transformation</h4>
+                <p><strong>Premium consultation available</strong> - Response within <strong>12 hours</strong></p>
+              </div>
+              <div class="text-center">
+                <a href="contact.html" class="btn btn-primary btn-lg mb-3">Schedule Consultation</a>
+                <div class="mt-3">
+                  <a href="mailto:nvntdhml1@gmail.com" class="btn btn-outline-primary me-2">Email Direct</a>
+                  <a href="tel:+918983321454" class="btn btn-outline-primary">Call Now</a>
+                </div>
+              </div>
+              
+              <div class="mt-5 text-center">
+                <h5>Premium Service Rates</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <small class="code-font">🤖 AI & Deep Learning: ₹1,500-2,000/hr</small><br>
+                    <small class="code-font">🎥 Computer Vision: ₹1,800-2,200/hr</small><br>
+                    <small class="code-font">🌐 Web Development: ₹1,000-1,500/hr</small>
+                  </div>
+                  <div class="col-md-6">
+                    <small class="code-font">☁️ Cloud & DevOps: ₹1,200-1,800/hr</small><br>
+                    <small class="code-font">💾 Data Engineering: ₹1,300-1,900/hr</small><br>
+                    <small class="code-font">🔧 Automation: ₹800-1,300/hr</small>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <small><em>Enterprise packages available • Global remote delivery • 98% satisfaction guarantee</em></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 <strong><span>Navneet Dhamal</span></strong>
+      </div>
+      <div class="credits">
+        Senior Software Engineer & Production Systems Architect
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+
+    // Enhanced Typing Animation
+    const typed = document.getElementById('typed');
+    const words = [
+      'Senior Software Engineer',  
+      'Computer Vision Engineer', 
+      'Python Developer', 
+      'Automation Consultant',
+      'Data Engineer',
+    ];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeAnimation() {
+      const currentWord = words[wordIndex];
+      
+      if (isDeleting) {
+        typed.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typed.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        setTimeout(() => isDeleting = true, 2000);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+
+      const typeSpeed = isDeleting ? 100 : 150;
+      setTimeout(typeAnimation, typeSpeed);
+    }
+
+    typeAnimation();
+
+    // Smooth scrolling with offset for fixed header
+    $(document).ready(function() {
+      $("a.nav-link").click(function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 60
+          }, 800);
+        }
+      });
+    });
+
+    // Enhanced Portfolio filter with animations
+    $(document).ready(function() {
+      $('#portfolio-flters li').click(function() {
+        $('#portfolio-flters li').removeClass('filter-active');
+        $(this).addClass('filter-active');
+        
+        const filter = $(this).attr('data-filter');
+        
+        $('.portfolio-item').fadeOut(300, function() {
+          if (filter === '*') {
+            $('.portfolio-item').fadeIn(300);
+          } else {
+            $(filter).fadeIn(300);
+          }
+        });
+      });
+    });
+
+    // Initialize Swiper for testimonials
+    const swiper = new Swiper('.testimonials-swiper', {
+      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    // Mobile Navigation
+    $(document).ready(function() {
+      $('.mobile-nav-toggle').click(function() {
+        $('body').toggleClass('mobile-nav-active');
+        $('#header').toggleClass('mobile-nav-active');
+      });
+
+      $('.nav-link').click(function() {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#header').removeClass('mobile-nav-active');
+        }
+      });
+    });
+
+    // Enhanced Back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn('slow');
+      } else {
+        $('.back-to-top').fadeOut('slow');
+      }
+    });
+
+    $('.back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+      return false;
+    });
+
+    // FIXED: Enhanced Skills progress bar animation with proper visibility
+    $(window).scroll(function() {
+      $('.skills .progress-bar').each(function() {
+        const progressBar = $(this);
+        const progressValue = progressBar.attr('aria-valuenow');
+        
+        // Check if element is in viewport
+        const elementTop = progressBar.offset().top;
+        const elementBottom = elementTop + progressBar.outerHeight();
+        const viewportTop = $(window).scrollTop();
+        const viewportBottom = viewportTop + $(window).height();
+        
+        if (elementBottom > viewportTop && elementTop < viewportBottom) {
+          // Animate the width
+          progressBar.animate({
+            width: progressValue + '%'
+          }, 1500, 'easeInOutExpo');
+        }
+      });
+    });
+
+    // Replace missing images with high-quality placeholders
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        
+        images.forEach(function(img) {
+            img.addEventListener('error', function() {
+                if (this.src.includes('profile-img')) {
+                    this.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face';
+                } else if (this.src.includes('portfolio/')) {
+                    const filename = this.src.split('/').pop();
+                    if (filename.includes('ai-defect')) {
+                        this.src = 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop';
+                    } else if (filename.includes('realtime-object')) {
+                        this.src = 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop';
+                    } else if (filename.includes('enterprise-microservices')) {
+                        this.src = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop';
+                    } else if (filename.includes('realtime-data')) {
+                        this.src = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop';
+                    } else if (filename.includes('aws-cloud')) {
+                        this.src = 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop';
+                    } else if (filename.includes('intelligent-ocr')) {
+                        this.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop';
+                    }
+                }
+            });
+        });
+    });
+  </script>
+
+</body>
+</html>

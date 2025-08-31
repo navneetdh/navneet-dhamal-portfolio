@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Navneet Dhamal | Premium AI & Development Solutions</title>
+  <meta content="Premium AI development, machine learning, computer vision, and enterprise software services by Navneet Dhamal. Production systems with 100% accuracy and competitive pricing." name="description">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #000000;
+      --secondary-color: #ffffff;
+      --accent-color: #333333;
+      --text-light: #ffffff;
+      --text-dark: #000000;
+      --gray-light: #f8f9fa;
+      --success-color: #28a745;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-dark);
+      background: var(--secondary-color);
+    }
+
+    .code-font {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .breadcrumbs {
+      padding: 20px 0;
+      background: var(--gray-light);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .breadcrumbs h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .breadcrumbs ol li + li {
+      padding-left: 10px;
+    }
+
+    .breadcrumbs ol li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: var(--primary-color);
+      content: "/";
+    }
+
+    .service-details {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: calc(50% - 30px);
+    }
+
+    .section-bg {
+      background: var(--gray-light);
+    }
+
+    .section-dark {
+      background: var(--primary-color);
+      color: var(--text-light);
+    }
+
+    .section-dark .section-title h2 {
+      color: var(--text-light);
+    }
+
+    .section-dark .section-title h2::after {
+      background: var(--text-light);
+    }
+
+    .service-card {
+      background: var(--secondary-color);
+      border: 3px solid var(--primary-color);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--gray-light);
+    }
+
+    .service-icon {
+      width: 90px;
+      height: 90px;
+      background: var(--primary-color);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 25px;
+      flex-shrink: 0;
+    }
+
+    .service-icon i {
+      font-size: 45px;
+      color: var(--text-light);
+    }
+
+    .service-info h3 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+    }
+
+    .service-meta {
+      color: var(--accent-color);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .service-description {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      color: var(--text-dark);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
+      background: var(--gray-light);
+      border-radius: 12px;
+      border: 2px solid var(--primary-color);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary-color);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .feature-icon i {
+      font-size: 24px;
+      color: var(--text-light);
+    }
+
+    .feature-content h5 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 8px;
+    }
+
+    .feature-content p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .tech-stack-section {
+      margin: 40px 0;
+    }
+
+    .tech-stack-section h4 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .tech-badge {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: "JetBrains Mono", monospace;
+      transition: all 0.3s ease;
+    }
+
+    .tech-badge:hover {
+      background: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    .pricing-section {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .pricing-section h4 {
+      color: var(--text-light);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .pricing-tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .pricing-tier {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid rgba(255,255,255,0.2);
+    }
+
+    .pricing-tier h5 {
+      color: var(--text-light);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-light);
+      display: block;
+      margin-bottom: 8px;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .pricing-tier p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .success-story {
+      background: linear-gradient(135deg, var(--success-color), #20c997);
+      color: var(--text-light);
+      padding: 30px;
+      border-radius: 15px;
+      margin: 30px 0;
+    }
+
+    .success-story h4 {
+      color: var(--text-light);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .success-story blockquote {
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      border: none;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .success-story cite {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .cta-section {
+      background: var(--gray-light);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      margin: 40px 0;
+      border: 3px solid var(--primary-color);
+    }
+
+    .cta-section h4 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+
+    .cta-section p {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      border-color: var(--primary-color);
+      color: var(--text-light);
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin: 5px;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-outline-primary {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 10px;
+      margin: 5px;
+    }
+
+    .btn-outline-primary:hover {
+      background: var(--primary-color);
+      color: var(--text-light);
+    }
+
+    .back-to-home {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-home:hover {
+      color: var(--accent-color);
+      transform: translateX(-5px);
+    }
+
+    @media (max-width: 768px) {
+      .service-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .service-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-tiers {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 25px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h2>Premium Services</h2>
+          <p>World-class AI and development solutions</p>
+        </div>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Services</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Services Details Section ======= -->
+  <section class="service-details">
+    <div class="container">
+      
+      <a href="index.html#services" class="back-to-home">← Back to Services</a>
+
+      <!-- AI & Machine Learning Service -->
+      <div id="ai-ml" class="service-card" data-aos="fade-up">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="bx bx-brain"></i>
+          </div>
+          <div class="service-info">
+            <h3>AI & Machine Learning Solutions</h3>
+            <div class="service-meta">Production-Ready • 100% Accuracy • Enterprise Scale</div>
+          </div>
+        </div>
+
+        <div class="service-description">
+          I deliver <strong>cutting-edge AI solutions</strong> that transform businesses through intelligent automation. My expertise spans from <strong>computer vision systems</strong> processing thousands of images daily to <strong>predictive analytics</strong> that drive strategic decisions. Currently achieving <strong>100% accuracy</strong> in production AI systems while maintaining optimal performance and reliability.
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-camera"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Computer Vision Systems</h5>
+              <p>Advanced object detection, image recognition, and real-time video analytics using YOLO, Detectron2, and custom CNN architectures.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-trending-up"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Predictive Analytics</h5>
+              <p>Machine learning models for forecasting, risk assessment, and business intelligence with proven ROI.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-bot"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Intelligent Automation</h5>
+              <p>End-to-end automation solutions that reduce manual work by 80%+ while improving accuracy and efficiency.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-data"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Real-time Processing</h5>
+              <p>High-performance AI systems with sub-second inference times for mission-critical applications.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-stack-section">
+          <h4>Technology Stack</h4>
+          <div class="tech-stack">
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">OpenCV</span>
+            <span class="tech-badge">YOLO</span>
+            <span class="tech-badge">Detectron2</span>
+            <span class="tech-badge">Faster R-CNN</span>
+            <span class="tech-badge">scikit-learn</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">CUDA</span>
+            <span class="tech-badge">TensorRT</span>
+          </div>
+        </div>
+
+        <div class="success-story">
+          <h4>🎯 Current Production Success</h4>
+          <blockquote>
+            "Currently developing state-of-the-art deep learning models (CNNs, YOLO, Faster R-CNN, OCR) achieving 100% accuracy in image recognition and object detection systems. Building real-time data pipelines with Python and OpenCV, significantly improving processing performance for enterprise clients."
+          </blockquote>
+          <cite>— Current Role: Software Engineer, Insightzz Pvt Ltd</cite>
+        </div>
+
+        <div class="pricing-section">
+          <h4>💰 Premium AI Services Pricing</h4>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <h5>AI Consultation</h5>
+              <span class="price">₹1,500-2,000/hour</span>
+              <p>Strategy, feasibility analysis, technical architecture</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Computer Vision Systems</h5>
+              <span class="price">₹1,800-2,200/hour</span>
+              <p>Advanced object detection, image recognition</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Production AI Systems</h5>
+              <span class="price">₹80K - ₹6L projects</span>
+              <p>End-to-end AI solution development</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Enterprise AI Platform</h5>
+              <span class="price">₹2L - ₹10L projects</span>
+              <p>Scalable, enterprise-grade AI infrastructure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Computer Vision Service -->
+      <div id="computer-vision" class="service-card" data-aos="fade-up">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="bx bx-camera"></i>
+          </div>
+          <div class="service-info">
+            <h3>Computer Vision Systems</h3>
+            <div class="service-meta">Real-time Processing • Multi-object Detection • 30fps Performance</div>
+          </div>
+        </div>
+
+        <div class="service-description">
+          Specialized in building <strong>advanced computer vision systems</strong> that see, understand, and analyze visual data in real-time. From <strong>manufacturing quality control</strong> to <strong>security surveillance</strong>, my solutions deliver unmatched accuracy and performance.
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-bullseye"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Object Detection</h5>
+              <p>Real-time multi-object detection using YOLO v8 and Faster R-CNN with 95%+ mAP scores.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-image"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Image Classification</h5>
+              <p>Custom CNN architectures for precise image classification achieving 100% production accuracy.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-video"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Video Analytics</h5>
+              <p>Real-time video processing and analysis for surveillance, monitoring, and automated inspection.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-text"></i>
+            </div>
+            <div class="feature-content">
+              <h5>OCR & Document Processing</h5>
+              <p>Intelligent text extraction and document understanding with 99%+ accuracy across 15+ languages.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-section">
+          <h4>💰 Computer Vision Pricing</h4>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <h5>Vision Consultation</h5>
+              <span class="price">₹1,800-2,200/hour</span>
+              <p>System architecture, performance optimization</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Custom Model Development</h5>
+              <span class="price">₹1L - ₹4L projects</span>
+              <p>Domain-specific vision models</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Real-time Systems</h5>
+              <span class="price">₹2L - ₹8L projects</span>
+              <p>Production-ready vision platforms</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development Service -->
+      <div id="web-development" class="service-card section-bg" data-aos="fade-up">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <div class="service-info">
+            <h3>Enterprise Web Development</h3>
+            <div class="service-meta">FastAPI • Django • Microservices • High Performance</div>
+          </div>
+        </div>
+
+        <div class="service-description">
+          Build <strong>high-performance web applications</strong> and <strong>scalable API solutions</strong> using modern Python frameworks. My expertise in <strong>microservices architecture</strong> and <strong>cloud-native development</strong> ensures your applications can handle massive scale and complex business requirements.
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-server"></i>
+            </div>
+            <div class="feature-content">
+              <h5>FastAPI Development</h5>
+              <p>High-performance async APIs with automatic documentation and validation handling 100K+ requests daily.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-network-chart"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Microservices Architecture</h5>
+              <p>Scalable, maintainable service architecture with Docker containerization and orchestration.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-data"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Database Optimization</h5>
+              <p>Advanced PostgreSQL optimization, read replicas, and efficient data modeling for performance.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-shield-check"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Security & Authentication</h5>
+              <p>Robust authentication systems, API security, and data protection following industry best practices.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story">
+          <h4>🚀 Enterprise Success Story</h4>
+          <blockquote>
+            "Built interactive client-server web applications and APIs using Python Flask/Django with microservices architecture. Developed scalable REST APIs serving 100K+ daily requests with <200ms response times. Successfully deployed applications on AWS cloud with high-availability and fault tolerance."
+          </blockquote>
+          <cite>— Experience: SkyLex Technologies & Enterprise Clients</cite>
+        </div>
+
+        <div class="pricing-section">
+          <h4>💰 Web Development Pricing</h4>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <h5>API Development</h5>
+              <span class="price">₹1,000-1,500/hour</span>
+              <p>RESTful APIs, GraphQL, microservices</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Full-Stack Application</h5>
+              <span class="price">₹60K - ₹5L projects</span>
+              <p>Complete web application development</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Enterprise Platform</h5>
+              <span class="price">₹2L - ₹15L projects</span>
+              <p>Large-scale enterprise solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & DevOps Service -->
+      <div id="cloud-devops" class="service-card section-dark" data-aos="fade-up">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="bx bx-cloud"></i>
+          </div>
+          <div class="service-info">
+            <h3>Cloud Architecture & DevOps</h3>
+            <div class="service-meta">AWS • Docker • Kubernetes • 99.9% Uptime • Auto-scaling</div>
+          </div>
+        </div>
+
+        <div class="service-description">
+          Transform your infrastructure with <strong>modern cloud architecture</strong> and <strong>DevOps practices</strong>. I design and implement scalable, reliable cloud solutions that reduce costs, improve performance, and ensure high availability for your critical applications.
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-server"></i>
+            </div>
+            <div class="feature-content">
+              <h5>AWS Cloud Migration</h5>
+              <p>Complete cloud migration using EC2, S3, Lambda, RDS with focus on high-availability and cost optimization.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-cube"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Docker Containerization</h5>
+              <p>Application containerization for consistent deployment across environments with orchestration support.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-git-branch"></i>
+            </div>
+            <div class="feature-content">
+              <h5>CI/CD Pipelines</h5>
+              <p>Automated deployment pipelines reducing deployment time by 95% with comprehensive testing integration.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-line-chart"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Monitoring & Alerting</h5>
+              <p>Comprehensive monitoring solutions with real-time alerts and performance optimization.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-section">
+          <h4>💰 Cloud & DevOps Pricing</h4>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <h5>Cloud Consultation</h5>
+              <span class="price">₹1,200-1,800/hour</span>
+              <p>Architecture review, migration planning</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>AWS Migration</h5>
+              <span class="price">₹1.5L - ₹7L projects</span>
+              <p>Complete cloud migration and optimization</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>DevOps Implementation</h5>
+              <span class="price">₹80K - ₹3L projects</span>
+              <p>CI/CD, monitoring, automation setup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Engineering Service -->
+      <div id="data-engineering" class="service-card" data-aos="fade-up">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="bx bx-data"></i>
+          </div>
+          <div class="service-info">
+            <h3>Real-time Data Engineering</h3>
+            <div class="service-meta">Big Data • Real-time Analytics • 1M+ Records/Day • Sub-second Latency</div>
+          </div>
+        </div>
+
+        <div class="service-description">
+          Build <strong>high-performance data pipelines</strong> that process millions of records with sub-second latency. My expertise in <strong>real-time analytics</strong> and <strong>big data processing</strong> helps businesses make data-driven decisions instantly.
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-transfer"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Real-time Pipelines</h5>
+              <p>High-throughput data processing using Apache Kafka, Python, and advanced streaming technologies.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-filter"></i>
+            </div>
+            <div class="feature-content">
+              <h5>ETL/ELT Processes</h5>
+              <p>Efficient data extraction, transformation, and loading workflows with comprehensive error handling.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-line-chart-down"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Data Quality & Monitoring</h5>
+              <p>Automated data validation, quality checks, and comprehensive monitoring dashboards.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="bx bx-scatter-chart"></i>
+            </div>
+            <div class="feature-content">
+              <h5>Analytics & Insights</h5>
+              <p>Real-time analytics and business intelligence solutions with interactive dashboards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-section">
+          <h4>💰 Data Engineering Pricing</h4>
+          <div class="pricing-tiers">
+            <div class="pricing-tier">
+              <h5>Data Architecture</h5>
+              <span class="price">₹1,300-1,900/hour</span>
+              <p>Pipeline design, optimization consultation</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Pipeline Development</h5>
+              <span class="price">₹80K - ₹4L projects</span>
+              <p>Custom ETL/ELT pipeline implementation</p>
+            </div>
+            <div class="pricing-tier">
+              <h5>Real-time Analytics</h5>
+              <span class="price">₹1.5L - ₹6L projects</span>
+              <p>Complete analytics platform development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section" data-aos="fade-up">
+        <h4>Ready to Transform Your Business?</h4>
+        <p>Let's discuss your project requirements and create solutions that deliver exceptional results with competitive pricing and proven expertise.</p>
+        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        <a href="index.html" class="btn btn-outline-primary">Back to Home</a>
+        
+        <div class="mt-4">
+          <p><strong>🎯 Why Choose Me:</strong></p>
+          <div class="row text-start" style="max-width: 600px; margin: 0 auto;">
+            <div class="col-md-6">
+              <p>✅ 100% Production AI Accuracy<br>
+              ✅ 3+ Years Enterprise Experience<br>
+              ✅ 24-Hour Response Time</p>
+            </div>
+            <div class="col-md-6">
+              <p>✅ Competitive Indian Pricing<br>
+              ✅ Global Client Experience<br>
+              ✅ Proven Business Impact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+
+    // Show specific service based on URL hash
+    document.addEventListener('DOMContentLoaded', function() {
+      const hash = window.location.hash;
+      if (hash) {
+        const serviceElement = document.querySelector(hash);
+        if (serviceElement) {
+          serviceElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Highlight the specific service
+          serviceElement.style.background = 'var(--gray-light)';
+          setTimeout(() => {
+            serviceElement.style.background = 'var(--secondary-color)';
+          }, 3000);
+        }
+      }
+    });
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add hover effects to service cards
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Animate pricing cards on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'slideInUp 0.6s ease forwards';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.pricing-tier').forEach(tier => {
+      observer.observe(tier);
+    });
+
+    // Add CSS animation
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+</html>

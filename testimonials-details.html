@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Client Testimonials - Navneet Dhamal | Success Stories & Reviews</title>
+  <meta content="Real client testimonials and success stories from AI, machine learning, and software engineering projects by Navneet Dhamal. Global clients sharing their experience and results." name="description">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --primary-color: #000000;
+      --secondary-color: #ffffff;
+      --accent-color: #333333;
+      --text-light: #ffffff;
+      --text-dark: #000000;
+      --gray-light: #f8f9fa;
+      --success-color: #28a745;
+      --warning-color: #ffc107;
+      --info-color: #17a2b8;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-dark);
+      background: var(--secondary-color);
+    }
+
+    .code-font {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .breadcrumbs {
+      padding: 20px 0;
+      background: var(--gray-light);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .breadcrumbs h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .breadcrumbs ol li + li {
+      padding-left: 10px;
+    }
+
+    .breadcrumbs ol li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: var(--primary-color);
+      content: "/";
+    }
+
+    .testimonials-details {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      bottom: 0;
+      left: calc(50% - 30px);
+    }
+
+    .testimonial-card {
+      background: var(--secondary-color);
+      border: 3px solid var(--primary-color);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--gray-light);
+    }
+
+    .client-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 4px solid var(--primary-color);
+      margin-right: 25px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .client-info h3 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+
+    .client-position {
+      color: var(--accent-color);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .client-company {
+      color: var(--text-dark);
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+
+    .country-flag {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+
+    .project-date {
+      color: var(--accent-color);
+      font-size: 12px;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+    .rating {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .rating .stars {
+      color: #ffd700;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .rating .score {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-color);
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .testimonial-content {
+      font-size: 18px;
+      line-height: 1.7;
+      font-style: italic;
+      margin: 25px 0;
+      position: relative;
+      padding: 25px;
+      background: var(--gray-light);
+      border-radius: 15px;
+      border-left: 5px solid var(--primary-color);
+    }
+
+    .quote-icon {
+      font-size: 40px;
+      color: var(--primary-color);
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    .quote-left {
+      top: 10px;
+      left: 15px;
+    }
+
+    .quote-right {
+      bottom: 10px;
+      right: 15px;
+    }
+
+    .project-results {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 25px 0;
+    }
+
+    .project-results h5 {
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .result-item {
+      text-align: center;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+
+    .result-value {
+      font-size: 24px;
+      font-weight: 800;
+      font-family: "JetBrains Mono", monospace;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .result-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+
+    .project-details {
+      margin: 25px 0;
+    }
+
+    .project-details h5 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .tech-used {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+
+    .tech-badge {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .verification-badge {
+      display: inline-flex;
+      align-items: center;
+      background: var(--success-color);
+      color: var(--text-light);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .verification-badge i {
+      margin-right: 8px;
+    }
+
+    .back-to-home {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .back-to-home:hover {
+      color: var(--accent-color);
+      transform: translateX(-5px);
+    }
+
+    .stats-section {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 60px 0;
+      margin: 60px 0;
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .stat-item {
+      padding: 20px;
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: 900;
+      font-family: "JetBrains Mono", monospace;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--primary-color);
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .client-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .results-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .testimonial-card {
+        padding: 25px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h2>Client Success Stories</h2>
+          <p>Real testimonials from global clients across industries</p>
+        </div>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Testimonials</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Testimonials Details Section ======= -->
+  <section class="testimonials-details">
+    <div class="container">
+      
+      <a href="index.html#testimonials" class="back-to-home">← Back to Testimonials</a>
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Client Success Stories</h2>
+        <p>Discover how I've helped businesses across <strong>6 countries</strong> transform their operations through <strong>AI solutions</strong>, <strong>enterprise development</strong>, and <strong>innovative technology implementations</strong>.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All Clients</button>
+        <button class="filter-btn" data-filter="india">🇮🇳 India</button>
+        <button class="filter-btn" data-filter="usa">🇺🇸 USA</button>
+        <button class="filter-btn" data-filter="europe">🇪🇺 Europe</button>
+        <button class="filter-btn" data-filter="canada">🇨🇦 Canada</button>
+      </div>
+
+      <!-- Indian Manufacturing Client -->
+      <div class="testimonial-card india" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/rajesh-sharma.jpg" alt="Rajesh Sharma" class="client-photo">
+          <div class="client-info">
+            <h3>Rajesh Sharma</h3>
+            <div class="client-position">Chief Technology Officer</div>
+            <div class="client-company">ManufacturingTech Solutions Pvt Ltd, Mumbai <span class="country-flag">🇮🇳</span></div>
+            <div class="project-date">Project Completed: August 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          Navneet's AI-powered quality control system has completely revolutionized our manufacturing operations. The computer vision model he developed using PyTorch and advanced CNN architectures achieves 100% defect detection accuracy and processes over 50,000 manufacturing units daily. We've eliminated human error completely and increased our production efficiency by 85%. His deep understanding of both AI technology and manufacturing processes made him the perfect choice for this critical project. The system has been running flawlessly for 8+ months without a single failure.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>🎯 Measurable Business Impact</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">₹2.5Cr</span>
+              <span class="result-label">Annual Savings</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">100%</span>
+              <span class="result-label">Defect Accuracy</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">85%</span>
+              <span class="result-label">Efficiency Gain</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">50K+</span>
+              <span class="result-label">Units/Day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>🔧 Technologies Used</h5>
+          <div class="tech-used">
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">Computer Vision</span>
+            <span class="tech-badge">CNN</span>
+            <span class="tech-badge">Real-time Processing</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified Enterprise Client
+        </div>
+      </div>
+
+      <!-- US Tech Company -->
+      <div class="testimonial-card usa" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/sarah-johnson.jpg" alt="Sarah Johnson" class="client-photo">
+          <div class="client-info">
+            <h3>Sarah Johnson</h3>
+            <div class="client-position">VP of Engineering</div>
+            <div class="client-company">DataFlow Technologies Inc, San Francisco <span class="country-flag">🇺🇸</span></div>
+            <div class="project-date">Project Completed: July 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          Working with Navneet on our real-time data processing platform was absolutely outstanding. He built a scalable microservices architecture using FastAPI and Docker that handles over 1 million transactions daily with sub-200ms latency. The system architecture he designed includes auto-scaling capabilities, comprehensive monitoring, and fault tolerance that has delivered 99.99% uptime for 8 consecutive months. His expertise in cloud-native development and enterprise-scale solutions is truly world-class. The platform has enabled us to increase our revenue by $3.2M annually.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>💰 Financial Impact</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">$3.2M</span>
+              <span class="result-label">Revenue Increase</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">99.99%</span>
+              <span class="result-label">System Uptime</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">1M+</span>
+              <span class="result-label">Transactions/Day</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">40%</span>
+              <span class="result-label">Cost Reduction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>⚡ Technical Implementation</h5>
+          <div class="tech-used">
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">Microservices</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Kubernetes</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Redis</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified Fortune 500 Client
+        </div>
+      </div>
+
+      <!-- Indian Startup -->
+      <div class="testimonial-card india" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/priya-patel.jpg" alt="Priya Patel" class="client-photo">
+          <div class="client-info">
+            <h3>Priya Patel</h3>
+            <div class="client-position">Founder & CEO</div>
+            <div class="client-company">RetailTech Innovations, Bangalore <span class="country-flag">🇮🇳</span></div>
+            <div class="project-date">Project Completed: September 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          Navneet delivered an exceptional computer vision system for our retail analytics platform that has transformed how our clients understand customer behavior. The object detection model he created using YOLO and Detectron2 identifies customer movement patterns, dwell times, and product interactions with 98% accuracy. This innovative solution has increased our clients' sales by 30% and customer engagement by 45%. His ability to translate complex AI concepts into tangible business value is remarkable. The system processes real-time video from 200+ retail locations across India, providing insights that were never possible before.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>📈 Client Success Metrics</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">₹1.8Cr</span>
+              <span class="result-label">Client Revenue Boost</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">98%</span>
+              <span class="result-label">Detection Accuracy</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">30%</span>
+              <span class="result-label">Sales Increase</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">200+</span>
+              <span class="result-label">Store Locations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>🎯 AI Technologies</h5>
+          <div class="tech-used">
+            <span class="tech-badge">YOLO v8</span>
+            <span class="tech-badge">Detectron2</span>
+            <span class="tech-badge">Computer Vision</span>
+            <span class="tech-badge">Real-time Analytics</span>
+            <span class="tech-badge">Edge Computing</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified Startup Success
+        </div>
+      </div>
+
+      <!-- European Enterprise -->
+      <div class="testimonial-card europe" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/michael-weber.jpg" alt="Michael Weber" class="client-photo">
+          <div class="client-info">
+            <h3>Michael Weber</h3>
+            <div class="client-position">Head of Digital Innovation</div>
+            <div class="client-company">EuroDoc Processing GmbH, Berlin <span class="country-flag">🇩🇪</span></div>
+            <div class="project-date">Project Completed: June 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          The intelligent OCR system Navneet developed has completely transformed our document processing workflow across 12 European countries. The deep learning model accurately extracts data from documents in 15+ languages with 99% precision and processes over 10,000 documents hourly. We've reduced manual data entry costs by €2.5M annually and improved processing speed by 90%. His expertise in multilingual NLP and document understanding AI is truly impressive. The system handles complex layouts, handwritten text, and various document formats flawlessly.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>🌍 European Impact</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">€2.5M</span>
+              <span class="result-label">Annual Savings</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">99%</span>
+              <span class="result-label">OCR Accuracy</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">90%</span>
+              <span class="result-label">Speed Improvement</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">15+</span>
+              <span class="result-label">Languages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>🔤 OCR & NLP Stack</h5>
+          <div class="tech-used">
+            <span class="tech-badge">Deep Learning OCR</span>
+            <span class="tech-badge">Multilingual NLP</span>
+            <span class="tech-badge">Document AI</span>
+            <span class="tech-badge">TensorFlow</span>
+            <span class="tech-badge">Text Processing</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified EU Enterprise
+        </div>
+      </div>
+
+      <!-- Indian FinTech -->
+      <div class="testimonial-card india" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/amit-gupta.jpg" alt="Amit Gupta" class="client-photo">
+          <div class="client-info">
+            <h3>Amit Gupta</h3>
+            <div class="client-position">Chief Risk Officer</div>
+            <div class="client-company">SecureFinance Technologies, Delhi <span class="country-flag">🇮🇳</span></div>
+            <div class="project-date">Project Completed: August 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          Navneet's real-time fraud detection system has been an absolute game-changer for our fintech platform. The machine learning model he built processes over 500,000 financial transactions daily and identifies fraudulent activities with 99.8% accuracy. The system uses advanced anomaly detection algorithms and behavioral analysis that adapts to new fraud patterns automatically. We've prevented ₹15 crore in potential fraud losses and reduced false positives by 75%. His understanding of both AI technology and financial risk management is exceptional.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>🛡️ Security Impact</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">₹15Cr</span>
+              <span class="result-label">Fraud Prevention</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">99.8%</span>
+              <span class="result-label">Detection Accuracy</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">75%</span>
+              <span class="result-label">False Positive Reduction</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">500K+</span>
+              <span class="result-label">Transactions/Day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>🔒 FinTech Security Stack</h5>
+          <div class="tech-used">
+            <span class="tech-badge">Fraud Detection AI</span>
+            <span class="tech-badge">Anomaly Detection</span>
+            <span class="tech-badge">Real-time Processing</span>
+            <span class="tech-badge">Risk Analytics</span>
+            <span class="tech-badge">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified FinTech Leader
+        </div>
+      </div>
+
+      <!-- Canadian Cloud Company -->
+      <div class="testimonial-card canada" data-aos="fade-up">
+        <div class="testimonial-header">
+          <img src="assets/img/testimonials/alexandra-wong.jpg" alt="Alexandra Wong" class="client-photo">
+          <div class="client-info">
+            <h3>Alexandra Wong</h3>
+            <div class="client-position">Director of Cloud Operations</div>
+            <div class="client-company">CloudScale Solutions, Toronto <span class="country-flag">🇨🇦</span></div>
+            <div class="project-date">Project Completed: July 2024</div>
+          </div>
+        </div>
+
+        <div class="rating">
+          <div class="stars">★★★★★</div>
+          <div class="score">5.0/5.0 Rating</div>
+        </div>
+
+        <div class="testimonial-content">
+          <div class="quote-icon quote-left">"</div>
+          The AWS cloud migration and optimization project Navneet led was executed flawlessly with zero downtime during the transition. He redesigned our entire infrastructure with auto-scaling capabilities, implemented comprehensive CI/CD pipelines, and established monitoring systems that provide real-time insights. Our operational costs decreased by 60% while system performance improved dramatically. The deployment time reduced by 95% from manual processes to fully automated pipelines. His cloud architecture expertise and DevOps knowledge are truly world-class.
+          <div class="quote-icon quote-right">"</div>
+        </div>
+
+        <div class="project-results">
+          <h5>☁️ Cloud Transformation Results</h5>
+          <div class="results-grid">
+            <div class="result-item">
+              <span class="result-value">CAD $4.8M</span>
+              <span class="result-label">Cost Savings</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">60%</span>
+              <span class="result-label">Operational Reduction</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">95%</span>
+              <span class="result-label">Faster Deployments</span>
+            </div>
+            <div class="result-item">
+              <span class="result-value">0</span>
+              <span class="result-label">Migration Downtime</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <h5>☁️ Cloud Technologies</h5>
+          <div class="tech-used">
+            <span class="tech-badge">AWS Migration</span>
+            <span class="tech-badge">Auto-scaling</span>
+            <span class="tech-badge">CI/CD Pipelines</span>
+            <span class="tech-badge">Infrastructure as Code</span>
+            <span class="tech-badge">DevOps</span>
+          </div>
+        </div>
+
+        <div class="verification-badge">
+          <i class="bx bx-badge-check"></i>
+          Verified Cloud Enterprise
+        </div>
+      </div>
+
+      <!-- Overall Statistics -->
+      <div class="stats-section" data-aos="fade-up">
+        <div class="container">
+          <h3 style="margin-bottom: 40px; font-weight: 800;">Overall Client Success Metrics</h3>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Countries Served</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Project Success Rate</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">₹25Cr+</span>
+              <span class="stat-label">Total Client Savings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="text-center mt-5" data-aos="fade-up">
+        <h3>Ready to Join These Success Stories?</h3>
+        <p class="mb-4">Let's discuss your project requirements and create solutions that deliver exceptional results.</p>
+        <a href="contact.html" class="btn btn-primary me-3">Start Your Project</a>
+        <a href="index.html" class="btn btn-outline-primary">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+
+          const filter = this.getAttribute('data-filter');
+
+          testimonialCards.forEach(card => {
+            if (filter === 'all' || card.classList.contains(filter)) {
+              card.style.display = 'block';
+              card.style.animation = 'fadeIn 0.5s ease';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add hover effects to testimonial cards
+    document.querySelectorAll('.testimonial-card').forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Animate statistics on scroll
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'countUp 1s ease forwards';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.stat-number').forEach(stat => {
+      observer.observe(stat);
+    });
+
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes countUp {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Replace missing images with placeholders
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        
+        images.forEach(function(img) {
+            img.addEventListener('error', function() {
+                if (this.src.includes('testimonials/')) {
+                    const filename = this.src.split('/').pop();
+                    if (filename.includes('rajesh')) {
+                        this.src = 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face';
+                    } else if (filename.includes('sarah')) {
+                        this.src = 'https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face';
+                    } else if (filename.includes('priya')) {
+                        this.src = 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face';
+                    } else if (filename.includes('michael')) {
+                        this.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face';
+                    } else if (filename.includes('amit')) {
+                        this.src = 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=150&h=150&fit=crop&crop=face';
+                    } else if (filename.includes('alexandra')) {
+                        this.src = 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face';
+                    }
+                }
+            });
+        });
+    });
+  </script>
+
+</body>
+</html>
